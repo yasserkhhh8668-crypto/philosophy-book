@@ -20,8 +20,8 @@ jobs:
 
       - name: Compile twice
         run: |
-          xelatex -interaction=nonstopmode philosophy_book.textrue || 
-          xelatex -interaction=nonstopmode philosophy_book.textrue || 
+          xelatex -interaction=nonstopmode philosophy_book.tex true || 
+          xelatex -interaction=nonstopmode philosophy_book.tex true || 
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
